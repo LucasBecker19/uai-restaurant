@@ -33,6 +33,7 @@ const LoginButton = styled.button`
     padding: 24px 36px;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
 `;
 
 const DefaultHeaderSpan = styled.span`
