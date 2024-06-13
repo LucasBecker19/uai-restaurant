@@ -23,7 +23,7 @@ const HeaderButtons = styled.div`
 const LoginButton = styled.button`
     background-color: #059669;
     border-radius: 20px;
-    border: 1px;
+    border: 0;
     opacity: 0px;
     
     font-family: Poppins;
