@@ -26,7 +26,6 @@ const LoginButton = styled.button`
     border: 0;
     opacity: 0px;
     
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
