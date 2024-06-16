@@ -9,8 +9,8 @@ const StyledHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 32px 14px;
     border-bottom: 1px solid #CADAD4;
+    background-color: white;
     
     @media (min-width:320px) and (max-width:1024px) {
         > img {
@@ -19,10 +19,12 @@ const StyledHeader = styled.div`
         }
 
         box-shadow: 0px 4px 4px 0px #0000000A;
+        padding: 8px 32px 8px;
     }
 
     @media (min-width:1025px) {
         margin: 0 64px;
+        padding: 24px 32px 14px;
     }
 `;
 

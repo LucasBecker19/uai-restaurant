@@ -3,10 +3,18 @@ import styled from "styled-components";
 const StyledAppRate = styled.div`
     display: flex;
     flex-direction: row;
-
-    font-size: 18px;
     font-weight: 500;
-    line-height: 18px;
+
+    @media (min-width:1025px) {
+        font-size: 18px;
+        line-height: 18px;    
+    }
+
+    @media (min-width:320px) and (max-width:1024px) {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    
 `;
 
 const ImageWrapper = styled.div`

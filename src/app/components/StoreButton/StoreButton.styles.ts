@@ -27,15 +27,40 @@ const StyledStoreButton = styled.div`
         margin: 0;
     }
 
-    span {
-        font-size: 12px;
-        font-weight: 400;
+    @media (min-width:1025px) {
+        .image {
+            width: 23px;
+            height: 28px;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    
+        p {
+            font-size: 18px;
+            font-weight: 700;
+        }
     }
 
-    p {
-        font-size: 18px;
-        font-weight: 700;
+    @media (min-width:320px) and (max-width:1024px) {
+        .image > img {
+            width: 17px;
+            height: 20px;
+        }
+
+        span {
+            font-size: 9px;
+            font-weight: 400;
+        }
+    
+        p {
+            font-size: 13px;
+            font-weight: 700;
+        }
     }
+    
 `;
 
 export { StyledStoreButton };
