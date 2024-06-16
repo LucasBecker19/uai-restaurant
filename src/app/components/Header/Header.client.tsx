@@ -1,19 +1,21 @@
 import Image from "next/image";
 import LogoImage from "../../../../public/Logo.svg";
-import { DefaultHeaderSpan, HeaderButtons, LoginButton, StyledHeader } from "./Header.styles";
+import ToggleMenuImage from "../../../../public/toggle-menu.svg";
+import { HeaderButtonsDesktop, MobileMenuToggle, StyledHeader } from "./Header.styles";
+import HeaderButtons from "./HeaderButtons.client";
 
 export default function Header() {
     return (
         <StyledHeader>
+            <MobileMenuToggle>
+                <Image src={ToggleMenuImage} alt="toggle-menu" />
+            </MobileMenuToggle>
+
             <Image src={LogoImage} alt="logo" />
 
-            <HeaderButtons>
-                <DefaultHeaderSpan>Home</DefaultHeaderSpan>
-                <DefaultHeaderSpan>Funcionalidades</DefaultHeaderSpan>
-                <DefaultHeaderSpan>Sobre Uai App</DefaultHeaderSpan>
-                <DefaultHeaderSpan>Telas do App</DefaultHeaderSpan>
-                <LoginButton>Entrar</LoginButton>
-            </HeaderButtons>
+            <HeaderButtonsDesktop>
+                <HeaderButtons />
+            </HeaderButtonsDesktop>
         </StyledHeader>
     );
 }

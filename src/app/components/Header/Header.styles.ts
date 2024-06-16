@@ -9,15 +9,44 @@ const StyledHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 64px;
     padding: 24px 32px 14px;
     border-bottom: 1px solid #CADAD4;
+    
+    @media (min-width:320px) and (max-width:1024px) {
+        > img {
+            width: 78px;
+            height: 59px;
+        }
+
+        box-shadow: 0px 4px 4px 0px #0000000A;
+    }
+
+    @media (min-width:1025px) {
+        margin: 0 64px;
+    }
 `;
 
-const HeaderButtons = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 60px;
+const HeaderButtonsDesktop = styled.div`
+    display: none;
+
+    @media (min-width:1025px) {
+        display: flex;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+`;
+
+const MobileMenuToggle = styled.div`
+    display: none;
+
+    @media (min-width:320px) and (max-width:1024px) {
+        display: flex;
+
+        > img {
+            cursor: pointer;
+        }
+    }
 `;
 
 const LoginButton = styled.button`
@@ -45,4 +74,4 @@ const DefaultHeaderSpan = styled.span`
     text-transform: uppercase;
 `;
 
-export { StyledHeader, HeaderButtons, LoginButton, DefaultHeaderSpan };
+export { StyledHeader, HeaderButtonsDesktop, MobileMenuToggle, LoginButton, DefaultHeaderSpan };
