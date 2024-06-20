@@ -17,12 +17,14 @@ const AppInfos = styled.div`
     flex-direction: column;
 
     @media (min-width:320px) and (max-width:1024px) {
-        padding: 120px 20px 0 20px;
         margin: auto;
+        margin-top: 80px;
+        padding: 24px 20px 0px;
     }
 
     @media (min-width:1025px) {
-        padding: 248px 0 50px 96px;
+        margin-top: 156px;
+        padding: 84px 0 0 88px;
         width: 50%;
     }
 `;
@@ -33,7 +35,7 @@ const AppInfosTitle = styled.div`
         font-weight: 700;
         line-height: 49px;
         text-align: left;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
     }
 
     @media (min-width:1025px) {
@@ -63,6 +65,15 @@ const AppInfosDescription = styled.div`
     }
 `;
 
+const WrapperDownloadAndRate = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:320px) and (max-width:1024px) {
+        margin: auto;
+    }
+`;
+
 const AppDownload = styled.div`
     > div {
         display: flex;
@@ -83,9 +94,10 @@ const AppDownload = styled.div`
             font-size: 16px;
             line-height: 16px;
             letter-spacing: 0.1em;
+            margin-bottom: 50px;
         }
 
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     @media (min-width:320px) and (max-width:1024px) {
@@ -95,7 +107,7 @@ const AppDownload = styled.div`
             line-height: 12px;
         }
 
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
     
 `;
@@ -108,10 +120,16 @@ const AppPicture = styled.div`
         margin: auto; 
         margin-top: 0;
         margin-bottom: 0;
+        height: 100%;
+        width: 100%;
     }
 
     @media (min-width:1025px) {
         width: 50%;
+    }
+
+    @media (min-width:320px) and (max-width:1024px) {
+        padding-top: 32px;
     }
 `;
 
@@ -121,6 +139,7 @@ const AppPictureDesktop = styled.div`
     @media (min-width:1025px) {
         display: block;
         padding: 165px 0 0 0;
+        margin: auto;
     }
 `;
 
@@ -139,7 +158,7 @@ const MobileDownloadAndRate = styled.div`
     @media (min-width:320px) and (max-width:1024px) {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 24px 20px;
         margin: auto;
     }
 `;
@@ -153,4 +172,4 @@ const DesktopDownloadAndRate = styled.div`
     }
 `;
 
-export { StyledAppPresentation, AppInfos, AppPicture, AppInfosTitle, AppInfosDescription, AppDownload, DesktopDownloadAndRate, MobileDownloadAndRate, AppPictureDesktop, AppPictureMobile };
+export { StyledAppPresentation, AppInfos, AppPicture, AppInfosTitle, AppInfosDescription, WrapperDownloadAndRate, AppDownload, DesktopDownloadAndRate, MobileDownloadAndRate, AppPictureDesktop, AppPictureMobile };

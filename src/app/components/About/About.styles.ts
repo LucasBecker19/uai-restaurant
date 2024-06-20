@@ -3,8 +3,8 @@ import styled from "styled-components";
 const StyledAbout = styled.div`
     background-color: #F6F9F6;
     width: 100%;
-    padding: 0 20px 100px;
     margin: auto;
+    box-sizing: border-box;
 
     p {
         margin: 0;
@@ -21,6 +21,8 @@ const StyledAbout = styled.div`
     }
 
     @media (min-width:1025px) {
+        padding: 150px 88px 100px;
+
         p {
             font-size: 56px;
             font-weight: 700;
@@ -32,7 +34,6 @@ const StyledAbout = styled.div`
         }
 
         .wrapper-about-description {
-            padding: 175px 96px 0;
             max-width: 725px;
             
             > p {
@@ -44,11 +45,12 @@ const StyledAbout = styled.div`
             display: flex;
             justify-content: space-between;
             gap: 56px;
-            margin: 0 96px;
         }
     }
 
     @media (min-width:320px) and (max-width:1024px) {
+        padding: 24px 20px;
+        
         p {
             font-size: 18px;
             font-weight: 900;
@@ -60,7 +62,6 @@ const StyledAbout = styled.div`
         }
 
         .wrapper-about-description {
-            padding: 32px 0 0;
             max-width: 375px;
             margin: auto;
         }
@@ -68,6 +69,7 @@ const StyledAbout = styled.div`
         .wrapper-about-cards {
             flex-direction: column;
             gap: 40px;
+            margin-top: 16px;
         }
     }
 `;

@@ -44,7 +44,6 @@ const StyledCard = styled.div<{ variant: CardPropsVariant }>`
     @media (min-width:320px) and (max-width:1024px) {
         max-width: 285px;
         margin: auto;
-        margin-top: 24px;
 
         p {
             font-size: 17px;

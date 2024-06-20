@@ -1,30 +1,36 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #CADAD4;
-    background-color: white;
     
     @media (min-width:320px) and (max-width:1024px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        padding: 10px 35px;
+
+        box-shadow: 0px 4px 4px 0px #0000000A;
+        background-color: white;
+
         > img {
             width: 78px;
             height: 59px;
         }
-
-        box-shadow: 0px 4px 4px 0px #0000000A;
-        padding: 8px 32px 8px;
     }
 
     @media (min-width:1025px) {
-        margin: 0 64px;
-        padding: 24px 32px 14px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        margin: 0 88px;
+        padding: 40px 40px 26px 0;
     }
 `;
 

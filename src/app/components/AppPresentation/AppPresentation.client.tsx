@@ -13,7 +13,7 @@ export default function AppPresentation() {
                 </AppInfosTitle>
 
                 <AppInfosDescription>
-                    Descubra uma experiência gastronômica única com<br/>nosso aplicativo de restaurante.
+                    Descubra uma experiência gastronômica única com nosso aplicativo de restaurante.
                 </AppInfosDescription>
 
                 <DesktopDownloadAndRate>
