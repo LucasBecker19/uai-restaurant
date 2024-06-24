@@ -1,6 +1,5 @@
 import { AppInfos, AppInfosDescription, AppInfosTitle, AppPicture, AppPictureDesktop, AppPictureMobile, DesktopDownloadAndRate, MobileDownloadAndRate, StyledAppPresentation } from "./AppPresentation.styles";
-import AppPresentationImage from "../../../../public/app-presentation.svg";
-import AppPresentationMobileImage from "../../../../public/app-presentation-mobile.svg";
+import AppPresentationImage from "../../../../public/app-presentation.png";
 import Image from "next/image";
 import AppDownloadAndRate from "./AppDownloadAndRate.client";
 
@@ -27,7 +26,7 @@ export default function AppPresentation() {
                 </AppPictureDesktop>
 
                 <AppPictureMobile>
-                    <Image src={AppPresentationMobileImage} alt="app presentation image" />
+                    <Image src={AppPresentationImage} alt="app presentation image" />
                 </AppPictureMobile>
             </AppPicture>
 
