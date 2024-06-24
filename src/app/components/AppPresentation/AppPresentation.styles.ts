@@ -24,7 +24,7 @@ const AppInfos = styled.div`
 
     @media (min-width:1025px) {
         margin-top: 156px;
-        padding: 84px 0 0 88px;
+        padding: 84px 0px 100px 88px;
         width: 50%;
     }
 `;
